@@ -13,6 +13,8 @@
     <!-- <link href="css/flat-ui.min.css" rel="stylesheet"> -->
     <link href="css/bootflat.min.css" rel="stylesheet">
     <link href="css/customize.css" rel="stylesheet">
+    <link href="css/vinhnv1.css" rel="stylesheet">
+    <!-- Ví dụ:  <link href="css/DucTT.css" rel="stylesheet">-->
 </head>
 <body>
 <header>
@@ -61,138 +63,73 @@
 
 
 <div class="content" style="min-height: 600px">
+    <!-- Nơi code content -->
     <div class="container">
-           <h3 style="text-align: center;">Thống kê Thành viên</h3>
-           <table class="table table-hover table-bordered">
-               <thead>
-                    <tr class="success">
-                        <th>STT</th>
-                        <th>IDUser</th>
-                        <th>Họ Tên</th>
-                        <th>Số bài thi</th>
-                        <th>Số câu hỏi</th>
-                        <th>Số câu giải được</th>
-                    </tr>
-               </thead>
-               <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>U0001</td>
-                        <td>Thái Trung Đức</td>
-                        <td>22</td>
-                        <td>450</td>
-                        <td>430</td>
-                    </tr>
-                    <tr>
-                       <td>2</td>
-                        <td>U0005</td>
-                        <td>Trần Văn Vinh</td>
-                        <td>23</td>
-                        <td>450</td>
-                        <td>330</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>U0004</td>
-                        <td>Trần Thị Hồng Uyên</td>
-                        <td>27</td>
-                        <td>560</td>
-                        <td>330</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>4</td>
-                        <td>U0003</td>
-                        <td>Kai Long Lốt</td>
-                        <td>23</td>
-                        <td>510</td>
-                        <td>295</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>5</td>
-                        <td>U0002</td>
-                        <td>Bảo cương</td>
-                        <td>12</td>
-                        <td>250</td>
-                        <td>130</td>
-                    </tr>
+        <!-- Title h1 - căn giữa -->
+        <h1 align="center">Quản lý thành viên</h1>
+        <!-- Table ID-UserName-HoTen-....-Nâng cấp|Cấp mật khẩu|Chặn -->
 
-               </tbody>
-              
-           </table>
-           <div class="phan-trang">
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </div>
-            <hr>
-            <h3 style="text-align: center;">Thống kê Bài thi</h3>
-           <table class="table table-hover table-bordered">
-               <thead>
-                    <tr class="success">
-                        <th>STT</th>
-                        <th>ID</th>
-                        <th>Tên bài</th>
-                        <th>Số câu hỏi</th>
-                        <th>Số lượt làm</th>
-                        <th>Tỉ lệ câu hỏi giải được</th>
-                    </tr>
-               </thead>
-               <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>BT0001</td>
-                        <td>Test IQ Level 120</td>
-                        <td>48</td>
-                        <td>48</td>
-                        <td>80%</td>
-                    </tr>
-                    <tr>
-                       <td>2</td>
-                        <td>BT0005</td>
-                        <td>Tiếng Anh cơ bản</td>
-                        <td>44</td>
-                        <td>48</td>
-                        <td>79%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>BT0004</td>
-                        <td>Toán học lớp 5</td>
-                        <td>40</td>
-                        <td>27</td>
-                        <td>77%</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>4</td>
-                        <td>BT0003</td>
-                        <td>Connan truyện</td>
-                        <td>30</td>
-                        <td>23</td>
-                        <td>64%</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>5</td>
-                        <td>BT0002</td>
-                        <td>Fan of Liên minh huyền thoại</td>
-                        <td>20</td>
-                        <td>12</td>
-                        <td>63%</td>
-                    </tr>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr class="success">
+                    <th>ID</th>
+                    <th>Họ tên</th>
+                    <th>Địa chỉ</th>
+                    <th>Email</th>
+                    <th>SĐT</th>
+                    <th>Đơn vị</th>
+                    <th>UserName</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>       
+                <tr>
+                    <td>123</td>
+                    <td>vinh</td>
+                    <td>huế</td>
+                    <td>vinhnguyen11700@gmail.com</td>
+                    <td>123</td>
+                    <td>kh</td>
+                    <td>khy</td>
+                    <td>
+                    <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Nâng Cấp"><i class="fa fa-credit-card"></i></button>
+                    <button type="button" class="btn btn-success">Cấp lại MK</button>
+                    <button type="button" class="btn btn-danger">Chặn</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>long </td>
+                    <td>huế</td>
+                    <td>longdd123@gmail.com</td>
+                    <td>123</td>
+                    <td>kh</td>
+                    <td>khy</td>
+                    <td>
+                    <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Nâng Cấp"><i class="fa fa-credit-card" ></i></button>
+                    <button type="button" class="btn btn-success">Cấp lại MK</button>
+                    <button type="button" class="btn btn-danger">Chặn</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>đức </td>
+                    <td>huế</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>kh</td>
+                    <td>khy</td>
+                    <td>
+                    <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Nâng Cấp"><i class="fa fa-credit-card" ></i></button>
+                    <button type="button" class="btn btn-success">Cấp lại MK</button>
+                    <button type="button" class="btn btn-danger">Chặn</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-               </tbody>
-              
-           </table>
-           <div class="phan-trang">
+        <!-- Phân trang -->
+        <div class="phan-trang">
                 <ul class="pagination">
                     <li><a href="#">&laquo;</a></li>
                     <li><a href="#">1</a></li>
@@ -204,6 +141,7 @@
                 </ul>
             </div>
     </div>
+    
 </div>
 
 

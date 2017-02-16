@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="" tent="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <!-- CSS -->
+    <title>Trắc nghiệm trực tuyến</title>
+    <!-- Bx-Slider StyleSheet CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="css/flat-ui.min.css" rel="stylesheet"> -->
+    <link href="css/bootflat.min.css" rel="stylesheet">
+    <link href="css/customize.css" rel="stylesheet">
+    <!-- <link href="css/NameNguoiCode.css" rel="stylesheet"> -->
+    <!-- Ví dụ:  <link href="css/DucTT.css" rel="stylesheet">-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/quiz-logo.png">Trắc Nghiệm</a>
+            </div>
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li class="active"><a href="#">Bài Thi</a></li>
+                    <li><a href="#">Bảng xếp hạng</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Tìm</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Đăng nhập</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Cá nhân</a></li>
+                            <li><a href="#">Quản lý</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="content" style="min-height: 600px">
+    <!-- Nơi code content -->
+    <div class="container">
+        <div class="col-md-9 test">
+            <div class="hot-test clearfix">
+                <h3 class="">Bài thi quan trọng</h3>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Test IQ 1200</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>60 phút</span>
+                            <i class="fa fa-question-circle"></i><span>30 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>37</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Anh văn B1</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>90 phút</span>
+                            <i class="fa fa-question-circle"></i><span>60 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>62</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Test EQ - Version 2</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>20 phút</span>
+                            <i class="fa fa-question-circle"></i><span>20 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>69</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="new-test clearfix">
+                <h3 class="">Bài thi nổi bật</h3>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Test IQ 1200</span></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>60 phút</span>
+                            <i class="fa fa-question-circle"></i><span>30 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>3327</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Anh văn B1</span></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>90 phút</span>
+                            <i class="fa fa-question-circle"></i><span>60 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>2262</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Toán trắc nghiệm 5</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>60 phút</span>
+                            <i class="fa fa-question-circle"></i><span>30 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>1563</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="list-test clearfix">
+                <h3 class="">Danh sách bài thi</h3>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Test IQ 1200</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>60 phút</span>
+                            <i class="fa fa-question-circle"></i><span>30 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>37</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Test EQ - Version 2</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>20 phút</span>
+                            <i class="fa fa-question-circle"></i><span>20 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>69</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Toán trắc nghiệm 5</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>60 phút</span>
+                            <i class="fa fa-question-circle"></i><span>30 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>1563</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Anh văn B1</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>90 phút</span>
+                            <i class="fa fa-question-circle"></i><span>60 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>62</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Test EQ - Version 2</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>20 phút</span>
+                            <i class="fa fa-question-circle"></i><span>20 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>69</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="#" class="title"><span>Toán trắc nghiệm 5</span><i class="fa fa-lock"></i></a>
+                        <div class="info">
+                            <i class="fa fa-clock-o"></i><span>60 phút</span>
+                            <i class="fa fa-question-circle"></i><span>30 câu</span>
+                            <i class="fa fa-bar-chart"></i><span>1563</span>
+                        </div>
+                        <div class="desc ellipsis">
+                            Bài thi hỗ trợ mọi người test IQ của bản thân. Bài thi dựa trên chuẩn quốc tế
+                        </div>
+
+                        <div class="do-now">
+                           <button type="button" class="btn btn-danger">Làm ngay</button> 
+                           <a href="Test-Detail.html">Chi tiết <i class="fa fa-angle-double-right"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="phan-trang">
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-right">
+            <div class="search">
+                <div class="form-search search-only">
+                  <i class="search-icon glyphicon glyphicon-search"></i>
+                  <input type="text" class="form-control search-query">
+                </div>
+            </div>
+            <div class="category-header">Danh mục</div>
+            <div class="category item">
+
+                <ul>
+                    <li>
+                        <a href="">Khoa học</a>
+                        <ul>
+                            <li><a href="">Toán</a></li>
+                            <li><a href="">Vật lý</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="">Xã hội</a>
+                        <ul>
+                            <li><a href="">Văn học</a></li>
+                            <li><a href="">Lịch sử</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="">Giải trí</a>
+                        <ul>
+                            <li><a href="">Âm nhạc</a></li>
+                            <li><a href="">Phim ảnh</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="">IQ Test</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+                <div class="clearfix">
+                  <div class="footer-logo">
+                    <a href="#"><img src="img/quiz-logo.png">Trắc Nghiệm</a>
+                  </div>
+                  <dl class="footer-nav about">
+                    <dt class="nav-title">ABOUT</dt>
+                    <dd class="nav-item"><a>Nhóm 8 được thành lập dựa trên mục đích cao cả là thực hiện sứ mệnh làm ra 1 website thi trắc nghiệm trực tuyến mang tầm cỡ khu vực</a></dd>
+                  </dl>
+                  <dl class="footer-nav contact">
+                    <dt class="nav-title">CONTACT</dt>
+                    <dd class="nav-item">
+                        <form action="" method="POST" role="form">
+
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nội dung</label>
+                                <textarea class="form-control" id="" rows="3" placeholder="Nội dung liên hệ"></textarea>
+                            </div>
+                        
+                            <button type="submit" class="btn btn-danger">Gửi</button>
+                        </form>
+                    </dd>
+                  </dl>
+                  <dl class="footer-nav follow">
+                    <dt class="nav-title">CONTACT</dt>
+                    <dd class="nav-item"><a href="#">Basic Info</a></dd>
+                    <dd class="nav-item"><a href="#">Map</a></dd>
+                    <dd class="nav-item"><a href="#">Conctact Form</a></dd>
+                  </dl>
+                </div>
+                <div class="footer-copyright text-center">Copyright © 2014 Flathemes.All rights reserved.</div>
+              </div>
+</footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+<!--     <script src="js/flat-ui.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/jquery.fs.selecter.min.js"></script>
+    <script src="js/jquery.fs.stepper.min.js"></script>
+    <script src="js/customize.js"></script>
+    <script type="text/javascript">
+        // Code javascript tại đây
+        
+    </script>
+</body>
+</html>

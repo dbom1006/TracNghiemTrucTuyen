@@ -6,57 +6,116 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="" tent="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui" />
     <!-- CSS -->
-    <title>Edu Learn - Education Theme</title>
+    <title>Trắc nghiệm trực tuyến</title>
     <!-- Bx-Slider StyleSheet CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <!-- <link href="css/flat-ui.min.css" rel="stylesheet"> -->
     <link href="css/bootflat.min.css" rel="stylesheet">
     <link href="css/customize.css" rel="stylesheet">
+    <!-- <link href="css/NameNguoiCode.css" rel="stylesheet"> -->
+    <!-- Ví dụ:  <link href="css/DucTT.css" rel="stylesheet">-->
 </head>
 <body>
 <header>
-    <div class="logo">
-        Đây là logo
-    </div>
-    <div class="menu">
-        Đây là menu
-    </div>
-    <div class="search">
-       <select name="" id="input" class="form-control select" required="required">
-           <option value="">1</option>
-           <option value="">2</option>
-           <option value="">3</option>
-       </select>
-        Đây là search
-    </div>
-    <div class="account">
-        Đây là đăng nhập
-    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/quiz-logo.png">Trắc Nghiệm</a>
+            </div>
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li class="active"><a href="#">Bài Thi</a></li>
+                    <li><a href="#">Bảng xếp hạng</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Tìm</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Đăng nhập</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Cá nhân</a></li>
+                            <li><a href="#">Quản lý</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
 </header>
 
-<div class="content" style="height: 400px;background: #535353">
-    Đây là content
+
+
+<div class="content" style="min-height: 600px">
+    <!-- Nơi code content -->
 </div>
 
-<footer>
-    <div class="about">
-        Đây là thông tin
-    </div>
-    <div class="contact">
-        Đây là liên hệ
-    </div>
-    <div class="follow">
-        Đây là theo dõi
-    </div>
+
+
+<footer class="footer">
+    <div class="container">
+                <div class="clearfix">
+                  <div class="footer-logo">
+                    <a href="#"><img src="img/quiz-logo.png">Trắc Nghiệm</a>
+                  </div>
+                  <dl class="footer-nav about">
+                    <dt class="nav-title">ABOUT</dt>
+                    <dd class="nav-item"><a>Nhóm 8 được thành lập dựa trên mục đích cao cả là thực hiện sứ mệnh làm ra 1 website thi trắc nghiệm trực tuyến mang tầm cỡ khu vực</a></dd>
+                  </dl>
+                  <dl class="footer-nav contact">
+                    <dt class="nav-title">CONTACT</dt>
+                    <dd class="nav-item">
+                        <form action="" method="POST" role="form">
+
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nội dung</label>
+                                <textarea class="form-control" id="" rows="3" placeholder="Nội dung liên hệ"></textarea>
+                            </div>
+                        
+                            <button type="submit" class="btn btn-danger">Gửi</button>
+                        </form>
+                    </dd>
+                  </dl>
+                  <dl class="footer-nav follow">
+                    <dt class="nav-title">CONTACT</dt>
+                    <dd class="nav-item"><a href="#">Basic Info</a></dd>
+                    <dd class="nav-item"><a href="#">Map</a></dd>
+                    <dd class="nav-item"><a href="#">Conctact Form</a></dd>
+                  </dl>
+                </div>
+                <div class="footer-copyright text-center">Copyright © 2014 Flathemes.All rights reserved.</div>
+              </div>
 </footer>
     <script src="js/jquery-3.1.1.min.js"></script>
-    <!-- <script src="js/flat-ui.min.js"></script> -->
+<!--     <script src="js/flat-ui.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/icheck.min.js"></script>
     <script src="js/jquery.fs.selecter.min.js"></script>
     <script src="js/jquery.fs.stepper.min.js"></script>
+    <script src="js/customize.js"></script>
     <script type="text/javascript">
         // Code javascript tại đây
-        $("select").selecter();
+        
     </script>
 </body>
 </html>

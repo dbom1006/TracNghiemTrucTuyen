@@ -1,0 +1,10 @@
+table.table > tbody > tr > td{
+  vertical-align: middle;
+}
+.phan-trang{
+  text-align: center;
+}
+.create-test
+{
+  margin-bottom: 10px;
+}

@@ -13,6 +13,8 @@
     <!-- <link href="css/flat-ui.min.css" rel="stylesheet"> -->
     <link href="css/bootflat.min.css" rel="stylesheet">
     <link href="css/customize.css" rel="stylesheet">
+    <link href="css/longdd.css" rel="stylesheet">
+    <!-- Ví dụ:  <link href="css/DucTT.css" rel="stylesheet">-->
 </head>
 <body>
 <header>
@@ -61,67 +63,89 @@
 
 
 <div class="content" style="min-height: 600px">
+    <!-- Nơi code content -->
     <div class="container">
-           <h3 style="text-align: center;">Thống kê Thành viên</h3>
-           <table class="table table-hover table-bordered">
-               <thead>
+        <h2 class="text-center">Quản lý câu hỏi</h2>
+        <div class="mar-bot">
+            <button type="button" class="btn btn-info">Tạo Câu Hỏi</button>
+            <div class="col-md-4" style="float:right">
+                <div class="form-search search-only">
+                  <i class="search-icon glyphicon glyphicon-search"></i>
+                  <input type="text" class="form-control search-query">
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead >
                     <tr class="success">
-                        <th>STT</th>
-                        <th>IDUser</th>
-                        <th>Họ Tên</th>
-                        <th>Số bài thi</th>
-                        <th>Số câu hỏi</th>
-                        <th>Số câu giải được</th>
+                        <th>Nội dung câu hỏi</th>
+                        <th>Đáp Án Đúng</th>
+                        <th>Đáp Án Một</th>
+                        <th>Đáp Án Hai</th>
+                        <th>Đáp Án Ba</th>
+                        <th></th>
                     </tr>
-               </thead>
-               <tbody>
+                </thead>
+                <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>U0001</td>
-                        <td>Thái Trung Đức</td>
-                        <td>22</td>
-                        <td>450</td>
-                        <td>430</td>
-                    </tr>
-                    <tr>
-                       <td>2</td>
-                        <td>U0005</td>
-                        <td>Trần Văn Vinh</td>
-                        <td>23</td>
-                        <td>450</td>
-                        <td>330</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>U0004</td>
-                        <td>Trần Thị Hồng Uyên</td>
-                        <td>27</td>
-                        <td>560</td>
-                        <td>330</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>4</td>
-                        <td>U0003</td>
-                        <td>Kai Long Lốt</td>
-                        <td>23</td>
-                        <td>510</td>
-                        <td>295</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>5</td>
-                        <td>U0002</td>
-                        <td>Bảo cương</td>
-                        <td>12</td>
-                        <td>250</td>
-                        <td>130</td>
-                    </tr>
+                        <td>What Are You Doing?</td>
+                        <td>Play Game</td>
+                        <td>Play Soccer</td>
+                        <td>No Action</td>
+                        <td>Sleeep</td>
 
-               </tbody>
-              
-           </table>
-           <div class="phan-trang">
+                        <td>
+                        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button> 
+                        <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></td>
+                    </tr>
+                     <tr>
+                        <td>What Am I?</td>
+                        <td>Person</td>
+                        <td>Dog</td>
+                        <td>Cat</td>
+                        <td>No one</td>
+
+                        <td>
+                        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button> 
+                        <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></td>
+                    </tr>
+                     <tr>
+                        <td>Do you like me?</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Very Love</td>
+                        <td>Very Very Love</td>
+
+                        <td>
+                        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button> 
+                        <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Are you ok?</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Very OK</td>
+                        <td>Very Very OK</td>
+
+                        <td>
+                        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button> 
+                        <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Do you like coffee?</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Very Like It</td>
+                        <td>Very Very Hate it</td>
+
+                        <td>
+                        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button> 
+                        <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="phan-trang">
                 <ul class="pagination">
                     <li><a href="#">&laquo;</a></li>
                     <li><a href="#">1</a></li>
@@ -132,77 +156,7 @@
                     <li><a href="#">&raquo;</a></li>
                 </ul>
             </div>
-            <hr>
-            <h3 style="text-align: center;">Thống kê Bài thi</h3>
-           <table class="table table-hover table-bordered">
-               <thead>
-                    <tr class="success">
-                        <th>STT</th>
-                        <th>ID</th>
-                        <th>Tên bài</th>
-                        <th>Số câu hỏi</th>
-                        <th>Số lượt làm</th>
-                        <th>Tỉ lệ câu hỏi giải được</th>
-                    </tr>
-               </thead>
-               <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>BT0001</td>
-                        <td>Test IQ Level 120</td>
-                        <td>48</td>
-                        <td>48</td>
-                        <td>80%</td>
-                    </tr>
-                    <tr>
-                       <td>2</td>
-                        <td>BT0005</td>
-                        <td>Tiếng Anh cơ bản</td>
-                        <td>44</td>
-                        <td>48</td>
-                        <td>79%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>BT0004</td>
-                        <td>Toán học lớp 5</td>
-                        <td>40</td>
-                        <td>27</td>
-                        <td>77%</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>4</td>
-                        <td>BT0003</td>
-                        <td>Connan truyện</td>
-                        <td>30</td>
-                        <td>23</td>
-                        <td>64%</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>5</td>
-                        <td>BT0002</td>
-                        <td>Fan of Liên minh huyền thoại</td>
-                        <td>20</td>
-                        <td>12</td>
-                        <td>63%</td>
-                    </tr>
-
-               </tbody>
-              
-           </table>
-           <div class="phan-trang">
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </div>
+        </div>
     </div>
 </div>
 
